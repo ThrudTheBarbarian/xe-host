@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1934,6 +1934,29 @@ by exp-lbrs.ulp</description>
 <wire x1="3.25" y1="3.45" x2="3.25" y2="2.425" width="0.1" layer="21"/>
 <wire x1="-3.25" y1="-4.05" x2="3.25" y2="-4.05" width="0.1" layer="21"/>
 </package>
+<package name="SOTFL50P160X78-3N">
+<description>&lt;b&gt;SOT-523F&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.758" y="0.5" dx="0.635" dy="0.48" layer="1"/>
+<smd name="2" x="-0.758" y="-0.5" dx="0.635" dy="0.48" layer="1"/>
+<smd name="3" x="0.758" y="0" dx="0.635" dy="0.48" layer="1"/>
+<text x="0" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-1.778" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.225" y1="1" x2="1.225" y2="1" width="0.05" layer="51"/>
+<wire x1="1.225" y1="1" x2="1.225" y2="-1" width="0.05" layer="51"/>
+<wire x1="1.225" y1="-1" x2="-1.225" y2="-1" width="0.05" layer="51"/>
+<wire x1="-1.225" y1="-1" x2="-1.225" y2="1" width="0.05" layer="51"/>
+<wire x1="-0.44" y1="0.8" x2="0.44" y2="0.8" width="0.1" layer="51"/>
+<wire x1="0.44" y1="0.8" x2="0.44" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="0.44" y1="-0.8" x2="-0.44" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="-0.44" y1="-0.8" x2="-0.44" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-0.44" y1="0.3" x2="0.06" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-0.09" y1="0.8" x2="0.09" y2="0.8" width="0.2" layer="21"/>
+<wire x1="0.09" y1="0.8" x2="0.09" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="0.09" y1="-0.8" x2="-0.09" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="-0.09" y1="-0.8" x2="-0.09" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-1.075" y1="0.99" x2="-0.44" y2="0.99" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="XE_PBI">
@@ -2032,6 +2055,22 @@ by exp-lbrs.ulp</description>
 <pin name="GND@MH2" x="22.86" y="-25.4" length="middle" rot="R180"/>
 <pin name="GND@MP1" x="22.86" y="-27.94" length="middle" rot="R180"/>
 <pin name="GND@MP2" x="22.86" y="-30.48" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MMBT3904T">
+<text x="7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="B" x="-12.7" y="0" visible="pad" length="middle"/>
+<pin name="E" x="5.08" y="-12.7" length="middle" rot="R90"/>
+<pin name="C" x="5.08" y="12.7" length="middle" rot="R270"/>
+<circle x="0" y="0" radius="9.1581" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="3.81" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="2.286" y2="-7.112" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-12.7" y2="0" width="0.2" layer="94"/>
+<text x="-7.62" y="-2.54" size="1.4224" layer="95">B</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2168,6 +2207,34 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/10118241-001R
 <attribute name="MANUFACTURER_PART_NUMBER" value="10118241-001RLF" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="649-10118241-001RLF" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/10118241-001RLF?qs=Ywefl8B65e6AsX2jvbcj2Q%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMBT3904T" prefix="IC">
+<description>&lt;b&gt;Trans GP BJT NPN 40V 0.2A 300mW 3-Pin SOT-523FL T/R&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/MMBT3904T.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MMBT3904T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOTFL50P160X78-3N">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="MMBT3904T" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/mmbt3904t/on-semiconductor" constant="no"/>
+<attribute name="DESCRIPTION" value="Trans GP BJT NPN 40V 0.2A 300mW 3-Pin SOT-523FL T/R" constant="no"/>
+<attribute name="HEIGHT" value="0.78mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="ON Semiconductor" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="MMBT3904T" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="512-MMBT3904T" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/MMBT3904T?qs=ZAjGDd5n2aEhPNEac8fMzw%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12534,6 +12601,70 @@ DDEController.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Seeed-LED">
+<packages>
+<package name="LED-0603">
+<wire x1="-1.3335" y1="0.635" x2="1.3335" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.3335" y1="0.635" x2="1.3335" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.3335" y1="-0.635" x2="-1.3335" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.3335" y1="-0.635" x2="-1.3335" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="0.381" x2="-0.127" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="-0.381" x2="0" y2="-0.1905" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.1905" x2="0.127" y2="0" width="0.127" layer="21"/>
+<wire x1="0.127" y1="0" x2="0" y2="0.1905" width="0.127" layer="21"/>
+<wire x1="0" y1="0.1905" x2="-0.127" y2="0.381" width="0.127" layer="21"/>
+<wire x1="-0.0635" y1="0.254" x2="-0.0635" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="0" y1="0.1905" x2="0" y2="-0.1905" width="0.127" layer="21"/>
+<smd name="+" x="-0.762" y="0" dx="0.762" dy="0.889" layer="1" roundness="25"/>
+<smd name="-" x="0.762" y="0" dx="0.762" dy="0.889" layer="1" roundness="25"/>
+<text x="-1.905" y="0.889" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.143" y="-1.5875" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.5715" x2="1.27" y2="0.5715" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LED-1">
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.143" y2="2.413" width="0.254" layer="94"/>
+<wire x1="-1.143" y1="2.413" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.778" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.143" y1="2.413" x2="0.889" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0.889" y1="4.445" x2="0.127" y2="4.318" width="0.254" layer="94"/>
+<wire x1="0.889" y1="4.445" x2="0.762" y2="3.683" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.778" x2="1.524" y2="3.81" width="0.254" layer="94"/>
+<wire x1="1.524" y1="3.81" x2="0.762" y2="3.683" width="0.254" layer="94"/>
+<wire x1="1.524" y1="3.81" x2="1.397" y2="3.048" width="0.254" layer="94"/>
+<text x="-7.62" y="1.27" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
+<pin name="+" x="-3.81" y="0" visible="off" length="short" direction="pas"/>
+<pin name="-" x="3.81" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SMD-LED-CLEAR-GREEN(0603)" prefix="D" uservalue="yes">
+<description>304090043</description>
+<gates>
+<gate name="G$1" symbol="LED-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="19-217-G7C-AN1P2-3T" constant="no"/>
+<attribute name="VALUE" value="GREEN-0603" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12938,10 +13069,28 @@ DDEController.pdf</description>
 <part name="P+18" library="sjg-supply1" deviceset="+5V" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
+<part name="DONE" library="Seeed-LED" deviceset="SMD-LED-CLEAR-GREEN(0603)" device="" value="GREEN-0603">
+<attribute name="USE" value="SML-E12M8WT86"/>
+</part>
+<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="10K">
+<attribute name="USE" value="WR02X221 JAL"/>
+</part>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="100K">
+<attribute name="USE" value="PFR03S-104-JNH"/>
+</part>
+<part name="IC12" library="host" deviceset="MMBT3904T" device="">
+<attribute name="USE" value="MMBT3904T-7-F"/>
+</part>
+<part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
+<part name="+3V32" library="sjg-supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="12.7" y="243.84" size="1.778" layer="94">Checklist:
+
+[x]        All power-pin checklist items
+[ ]         Got as far as doing CDONE on configuration items</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="2.54" y="2.54" smashed="yes">
@@ -14782,6 +14931,32 @@ Use the Efinix transistor on CDONE</text>
 <instance part="SUPPLY29" gate="GND" x="161.29" y="-121.92" smashed="yes">
 <attribute name="VALUE" x="159.385" y="-125.095" size="1.778" layer="96"/>
 </instance>
+<instance part="DONE" gate="G$1" x="452.12" y="-20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="453.39" y="-12.7" size="1.27" layer="95" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="447.04" y="-15.24" size="1.27" layer="96" ratio="10" rot="R270"/>
+<attribute name="USE" x="452.12" y="-20.32" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R29" gate="G$1" x="452.12" y="-2.54" smashed="yes" rot="R270">
+<attribute name="NAME" x="453.6186" y="1.27" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="448.818" y="1.27" size="1.778" layer="96" rot="R270"/>
+<attribute name="USE" x="452.12" y="-2.54" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R30" gate="G$1" x="421.64" y="-45.72" smashed="yes">
+<attribute name="NAME" x="417.83" y="-44.2214" size="1.778" layer="95"/>
+<attribute name="VALUE" x="417.83" y="-49.022" size="1.778" layer="96"/>
+<attribute name="USE" x="421.64" y="-45.72" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="IC12" gate="G$1" x="447.04" y="-45.72" smashed="yes">
+<attribute name="NAME" x="454.66" y="-38.1" size="1.778" layer="95"/>
+<attribute name="VALUE" x="454.66" y="-55.88" size="1.778" layer="96"/>
+<attribute name="USE" x="447.04" y="-45.72" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SUPPLY30" gate="GND" x="452.12" y="-68.58" smashed="yes">
+<attribute name="VALUE" x="450.215" y="-71.755" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V32" gate="G$1" x="452.12" y="12.7" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="449.58" y="15.24" size="1.778" layer="96" rot="MR180"/>
+</instance>
 </instances>
 <busses>
 <bus name="A8_BUS:A8_A[0..7],A8_A8,A8_A[9..15],!A8_CCTL!,!A8_CLK!,A8_D[0..1],!A8_D1XX!,A8_D[2..7],!A8_EXTSEL!,!A8_HALT!,!A8_IRQ!,!A8_MPD!,A8_RD4,A8_RD5,!A8_REF!,!A8_RESET!,!A8_RST!,A8_R/!W!,!A8_S4!,!A8_S5!">
@@ -14966,7 +15141,6 @@ Use the Efinix transistor on CDONE</text>
 <wire x1="121.92" y1="-50.8" x2="124.46" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-53.34" x2="157.48" y2="-53.34" width="0.1524" layer="91"/>
 <label x="127" y="-53.34" size="1.778" layer="95"/>
-<label x="127" y="-55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!A8_CLK!" class="0">
@@ -15006,6 +15180,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="21"/>
 <wire x1="121.92" y1="-99.06" x2="124.46" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-101.6" x2="157.48" y2="-101.6" width="0.1524" layer="91"/>
+<label x="127" y="-101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_A1" class="0">
@@ -15025,6 +15200,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="23"/>
 <wire x1="121.92" y1="-101.6" x2="124.46" y2="-104.14" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-104.14" x2="157.48" y2="-104.14" width="0.1524" layer="91"/>
+<label x="127" y="-104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_A2" class="0">
@@ -15044,6 +15220,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="25"/>
 <wire x1="121.92" y1="-104.14" x2="124.46" y2="-106.68" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-106.68" x2="157.48" y2="-106.68" width="0.1524" layer="91"/>
+<label x="127" y="-106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_A3" class="0">
@@ -15063,6 +15240,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="27"/>
 <wire x1="121.92" y1="-106.68" x2="124.46" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-109.22" x2="157.48" y2="-109.22" width="0.1524" layer="91"/>
+<label x="127" y="-109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_A4" class="0">
@@ -15322,6 +15500,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="11"/>
 <wire x1="121.92" y1="-86.36" x2="124.46" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-88.9" x2="157.48" y2="-88.9" width="0.1524" layer="91"/>
+<label x="127" y="-88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_D1" class="0">
@@ -15341,6 +15520,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="13"/>
 <wire x1="121.92" y1="-88.9" x2="124.46" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-91.44" x2="157.48" y2="-91.44" width="0.1524" layer="91"/>
+<label x="127" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_D2" class="0">
@@ -15360,6 +15540,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="15"/>
 <wire x1="121.92" y1="-91.44" x2="124.46" y2="-93.98" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-93.98" x2="157.48" y2="-93.98" width="0.1524" layer="91"/>
+<label x="127" y="-93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_D3" class="0">
@@ -15399,6 +15580,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="19"/>
 <wire x1="121.92" y1="-96.52" x2="124.46" y2="-99.06" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-99.06" x2="157.48" y2="-99.06" width="0.1524" layer="91"/>
+<label x="127" y="-99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_D5" class="0">
@@ -15418,6 +15600,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="17"/>
 <wire x1="121.92" y1="-93.98" x2="124.46" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-96.52" x2="157.48" y2="-96.52" width="0.1524" layer="91"/>
+<label x="127" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_D6" class="0">
@@ -15437,6 +15620,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="9"/>
 <wire x1="121.92" y1="-83.82" x2="124.46" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-86.36" x2="157.48" y2="-86.36" width="0.1524" layer="91"/>
+<label x="127" y="-86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_D7" class="0">
@@ -15536,6 +15720,7 @@ Use the Efinix transistor on CDONE</text>
 <wire x1="121.92" y1="-109.22" x2="124.46" y2="-111.76" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-111.76" x2="157.48" y2="-111.76" width="0.1524" layer="91"/>
 <pinref part="DBG_CART" gate="A" pin="29"/>
+<label x="127" y="-111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!A8_S5!" class="0">
@@ -15555,6 +15740,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_CART" gate="A" pin="7"/>
 <wire x1="121.92" y1="-81.28" x2="124.46" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-83.82" x2="157.48" y2="-83.82" width="0.1524" layer="91"/>
+<label x="127" y="-83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!A8_D1XX!" class="0">
@@ -15614,6 +15800,7 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_EXT" gate="A" pin="13"/>
 <wire x1="121.92" y1="-53.34" x2="124.46" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-55.88" x2="157.48" y2="-55.88" width="0.1524" layer="91"/>
+<label x="127" y="-55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8_R/!W!" class="0">
@@ -15840,12 +16027,21 @@ Use the Efinix transistor on CDONE</text>
 <junction x="185.42" y="165.1"/>
 <pinref part="IC7" gate="G$1" pin="!1OE"/>
 <wire x1="180.34" y1="172.72" x2="185.42" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="172.72" x2="185.42" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="172.72" x2="185.42" y2="170.18" width="0.1524" layer="91"/>
 <junction x="185.42" y="167.64"/>
 <pinref part="IC7" gate="G$1" pin="!2OE"/>
+<wire x1="185.42" y1="170.18" x2="185.42" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="175.26" x2="185.42" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="175.26" x2="185.42" y2="172.72" width="0.1524" layer="91"/>
 <junction x="185.42" y="172.72"/>
+<pinref part="IC7" gate="G$1" pin="1B7"/>
+<wire x1="147.32" y1="208.28" x2="165.1" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="208.28" x2="165.1" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="170.18" x2="185.42" y2="170.18" width="0.1524" layer="91"/>
+<junction x="185.42" y="170.18"/>
+<pinref part="IC7" gate="G$1" pin="1A7"/>
+<wire x1="180.34" y1="208.28" x2="165.1" y2="208.28" width="0.1524" layer="91"/>
+<junction x="165.1" y="208.28"/>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
@@ -15978,6 +16174,11 @@ Use the Efinix transistor on CDONE</text>
 <wire x1="165.1" y1="-109.22" x2="161.29" y2="-109.22" width="0.1524" layer="91"/>
 <pinref part="SUPPLY29" gate="GND" pin="GND"/>
 <wire x1="161.29" y1="-109.22" x2="161.29" y2="-119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC12" gate="G$1" pin="E"/>
+<pinref part="SUPPLY30" gate="GND" pin="GND"/>
+<wire x1="452.12" y1="-58.42" x2="452.12" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -16167,6 +16368,11 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="+3V31" gate="G$1" pin="+3V3"/>
 <wire x1="447.04" y1="60.96" x2="454.66" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="454.66" y1="60.96" x2="454.66" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="452.12" y1="2.54" x2="452.12" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="+3V32" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="DIR_RW" class="0">
@@ -17021,6 +17227,41 @@ Use the Efinix transistor on CDONE</text>
 <pinref part="DBG_EXT" gate="A" pin="14"/>
 <wire x1="165.1" y1="-55.88" x2="172.72" y2="-55.88" width="0.1524" layer="91"/>
 <label x="173.228" y="-56.388" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="!STATUS!" class="0">
+<segment>
+<pinref part="U$1" gate="-RIGHT" pin="GPIOL_71_!STATUS!@136"/>
+<wire x1="259.08" y1="144.78" x2="251.46" y2="144.78" width="0.1524" layer="91"/>
+<label x="250.952" y="145.288" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R30" gate="G$1" pin="2"/>
+<pinref part="IC12" gate="G$1" pin="B"/>
+<wire x1="426.72" y1="-45.72" x2="434.34" y2="-45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="DONE" gate="G$1" pin="-"/>
+<pinref part="IC12" gate="G$1" pin="C"/>
+<wire x1="452.12" y1="-24.13" x2="452.12" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="DONE" gate="G$1" pin="+"/>
+<wire x1="452.12" y1="-7.62" x2="452.12" y2="-16.51" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CDONE" class="0">
+<segment>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="416.56" y1="-45.72" x2="408.94" y2="-45.72" width="0.1524" layer="91"/>
+<label x="408.432" y="-45.212" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
