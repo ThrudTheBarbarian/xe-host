@@ -2766,6 +2766,7 @@ design rules under a new name.</description>
 <elements>
 <element name="U$1" library="sjg-efinix" package="TQFP144" value="T8" x="52.5" y="51.5" locked="yes" smashed="yes" rot="R90">
 <attribute name="NAME" x="55" y="54.5" locked="yes" size="1.778" layer="25" ratio="10" rot="R180"/>
+<attribute name="USE" value="T8Q144I4" x="52.5" y="51.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="55.04" y="46.42" locked="yes" size="1.778" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="TTAG" library="x-pi" package="2X07M" value="" x="81.58" y="58.03" locked="yes" smashed="yes" rot="R90">
@@ -3564,6 +3565,7 @@ design rules under a new name.</description>
 <attribute name="MOUSER_PART_NUMBER" value="649-10118241-001RLF" x="31" y="71.5" locked="yes" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/10118241-001RLF?qs=Ywefl8B65e6AsX2jvbcj2Q%3D%3D" x="31" y="71.5" locked="yes" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="33.5" y="66" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="USE" value="10118241-001RLF" x="31" y="71.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="24.65" y="71.5" locked="yes" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="DBG_CART" library="pinhead-2" package="2X15" value="" x="61" y="15" locked="yes" smashed="yes">

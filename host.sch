@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13228,7 +13228,9 @@ DDEController.pdf</description>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
-<part name="U$1" library="sjg-efinix" deviceset="T8" device=""/>
+<part name="U$1" library="sjg-efinix" deviceset="T8" device="">
+<attribute name="USE" value="T8Q144I4"/>
+</part>
 <part name="TTAG" library="x-pi" deviceset="TTAG_M" device="_2.00"/>
 <part name="U$2" library="host" deviceset="XE_PBI" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -13618,7 +13620,9 @@ DDEController.pdf</description>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="10K">
 <attribute name="USE" value="CR0201-JW-103GLF"/>
 </part>
-<part name="UHDMI" library="host" deviceset="10118241-001RLF" device=""/>
+<part name="UHDMI" library="host" deviceset="10118241-001RLF" device="">
+<attribute name="USE" value="10118241-001RLF"/>
+</part>
 <part name="DBG_CART" library="pinhead-2" deviceset="PINHD-2X15" device="_2.54"/>
 <part name="DBG_EXT" library="pinhead-2" deviceset="PINHD-2X07" device="_2.54"/>
 <part name="P+18" library="sjg-supply1" deviceset="+5V" device=""/>
@@ -13685,6 +13689,37 @@ DDEController.pdf</description>
 
 [x]        All T8 checklist items
 [x]        Directionality of level xlators</text>
+<wire x1="316.865" y1="52.705" x2="347.345" y2="52.705" width="1.27" layer="94"/>
+<text x="349.885" y="59.817" size="1.778" layer="94">0.035mm</text>
+<text x="349.885" y="52.197" size="1.778" layer="94">0.035mm</text>
+<text x="295.91" y="99.06" size="1.778" layer="94">Layer stack-up</text>
+<wire x1="290.83" y1="104.14" x2="382.27" y2="104.14" width="0.2032" layer="94"/>
+<wire x1="382.27" y1="104.14" x2="382.27" y2="30.48" width="0.2032" layer="94"/>
+<wire x1="382.27" y1="30.48" x2="290.83" y2="30.48" width="0.2032" layer="94"/>
+<wire x1="290.83" y1="30.48" x2="290.83" y2="104.14" width="0.2032" layer="94"/>
+<text x="314.96" y="68.58" size="1.778" layer="94" rot="R180">+3V3</text>
+<text x="294.005" y="32.385" size="1.778" layer="94">Dielectric constant: 4.29
+
+See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
+<text x="314.96" y="76.2" size="1.778" layer="94" rot="R180">Signal</text>
+<wire x1="316.865" y1="60.325" x2="347.345" y2="60.325" width="1.27" layer="94"/>
+<wire x1="316.865" y1="67.945" x2="347.345" y2="67.945" width="1.27" layer="94"/>
+<wire x1="316.865" y1="75.565" x2="347.345" y2="75.565" width="1.27" layer="94"/>
+<text x="349.885" y="67.437" size="1.778" layer="94">0.035mm</text>
+<text x="349.885" y="75.057" size="1.778" layer="94">0.035mm</text>
+<text x="314.96" y="60.96" size="1.778" layer="94" rot="R180">GND</text>
+<text x="314.96" y="53.34" size="1.778" layer="94" rot="R180">Signal </text>
+<text x="314.96" y="83.82" size="1.778" layer="94" rot="R180">+5V</text>
+<text x="314.96" y="91.44" size="1.778" layer="94" rot="R180">Signal</text>
+<wire x1="316.865" y1="83.185" x2="347.345" y2="83.185" width="1.27" layer="94"/>
+<wire x1="316.865" y1="90.805" x2="347.345" y2="90.805" width="1.27" layer="94"/>
+<text x="349.885" y="82.677" size="1.778" layer="94">0.035mm</text>
+<text x="349.885" y="90.297" size="1.778" layer="94">0.035mm</text>
+<text x="324.485" y="85.725" size="1.778" layer="94">0.21mm pre-preg</text>
+<text x="324.485" y="78.105" size="1.778" layer="94">0.2mm core</text>
+<text x="324.485" y="70.485" size="1.778" layer="94">0.21mm pre-preg</text>
+<text x="324.485" y="55.245" size="1.778" layer="94">0.21mm pre-preg</text>
+<text x="324.485" y="62.865" size="1.778" layer="94">0.2mm core</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="2.54" y="2.54" smashed="yes">
@@ -13702,14 +13737,15 @@ DDEController.pdf</description>
 <instance part="UHDMI" gate="G$1" x="116.84" y="144.78" smashed="yes" rot="MR0">
 <attribute name="NAME" x="134.62" y="175.768" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="134.62" y="109.22" size="1.778" layer="96" rot="MR0"/>
+<attribute name="USE" x="116.84" y="144.78" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="H1" gate="G$1" x="294.64" y="33.02" smashed="yes">
-<attribute name="NAME" x="297.434" y="33.6042" size="1.778" layer="95"/>
-<attribute name="VALUE" x="297.434" y="30.5562" size="1.778" layer="96"/>
+<instance part="H1" gate="G$1" x="116.84" y="86.36" smashed="yes">
+<attribute name="NAME" x="119.634" y="86.9442" size="1.778" layer="95"/>
+<attribute name="VALUE" x="119.634" y="83.8962" size="1.778" layer="96"/>
 </instance>
-<instance part="H2" gate="G$1" x="294.64" y="40.64" smashed="yes">
-<attribute name="NAME" x="297.434" y="41.2242" size="1.778" layer="95"/>
-<attribute name="VALUE" x="297.434" y="38.1762" size="1.778" layer="96"/>
+<instance part="H2" gate="G$1" x="116.84" y="93.98" smashed="yes">
+<attribute name="NAME" x="119.634" y="94.5642" size="1.778" layer="95"/>
+<attribute name="VALUE" x="119.634" y="91.5162" size="1.778" layer="96"/>
 </instance>
 <instance part="R32" gate="G$1" x="233.68" y="104.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="232.1814" y="100.33" size="1.778" layer="95" rot="R90"/>
@@ -13752,8 +13788,8 @@ DDEController.pdf</description>
 <attribute name="VALUE" x="273.05" y="59.182" size="1.778" layer="96" rot="R180"/>
 <attribute name="USE" x="269.24" y="55.88" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="SUPPLY33" gate="GND" x="281.94" y="20.32" smashed="yes">
-<attribute name="VALUE" x="280.035" y="17.145" size="1.778" layer="96"/>
+<instance part="SUPPLY33" gate="GND" x="104.14" y="73.66" smashed="yes">
+<attribute name="VALUE" x="102.235" y="70.485" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14049,13 +14085,13 @@ DDEController.pdf</description>
 </segment>
 <segment>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
-<wire x1="281.94" y1="22.86" x2="281.94" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="76.2" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="H2" gate="G$1" pin="MOUNT"/>
-<wire x1="281.94" y1="33.02" x2="281.94" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="40.64" x2="292.1" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="86.36" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="H1" gate="G$1" pin="MOUNT"/>
-<wire x1="292.1" y1="33.02" x2="281.94" y2="33.02" width="0.1524" layer="91"/>
-<junction x="281.94" y="33.02"/>
+<wire x1="114.3" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
+<junction x="104.14" y="86.36"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -15743,6 +15779,7 @@ Use the Efinix transistor on CDONE</text>
 <instance part="U$1" gate="-TOP" x="294.64" y="35.56" smashed="yes">
 <attribute name="NAME" x="276.86" y="79.502" size="1.27" layer="94"/>
 <attribute name="VALUE" x="276.86" y="-12.7" size="1.27" layer="94"/>
+<attribute name="USE" x="294.64" y="35.56" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U$5" gate="G$1" x="264.16" y="81.28" smashed="yes">
 <attribute name="VALUE" x="269.24" y="82.55" size="1.778" layer="96" rot="R180"/>
@@ -18519,6 +18556,25 @@ Use the Efinix transistor on CDONE</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,196.111,132.611,FRAME1,,,,,"/>
+<approved hash="113,2,196.111,130.071,FRAME2,,,,,"/>
+<approved hash="113,3,196.111,132.611,FRAME3,,,,,"/>
+<approved hash="113,3,93.1926,96.7461,TTAG,,,,,"/>
+<approved hash="113,2,350.757,216.126,V12,,,,,"/>
+<approved hash="113,2,89.1371,223.746,V33,,,,,"/>
+<approved hash="113,4,256.436,53.236,FRAME5,,,,,"/>
+<approved hash="113,3,266.937,115.796,CBUS0,,,,,"/>
+<approved hash="113,3,266.937,90.3961,CBUS1,,,,,"/>
+<approved hash="113,3,266.937,64.9961,CBUS2,,,,,"/>
+<approved hash="113,2,182.88,128.355,RESET,,,,,"/>
+<approved hash="113,4,447.277,85.3161,CBSEL0,,,,,"/>
+<approved hash="113,4,447.277,59.9161,CBSEL1,,,,,"/>
+<approved hash="113,4,161.248,-92.4839,DBG_CART,,,,,"/>
+<approved hash="113,4,161.248,-46.7639,DBG_EXT,,,,,"/>
+<approved hash="113,4,265.388,-34.0639,DBG_XIO0,,,,,"/>
+<approved hash="113,4,265.388,-59.4639,DBG_XIO1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
