@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1403,29 +1403,6 @@ DDEController.pdf</description>
 <wire x1="-1.557" y1="-1.26" x2="-1.657" y2="-1.26" width="0.2" layer="21" curve="180"/>
 <wire x1="-1.657" y1="-1.26" x2="-1.557" y2="-1.26" width="0.2" layer="21" curve="180"/>
 </package>
-<package name="SON95P300X300X100-7N">
-<description>&lt;b&gt;DFN6 (3x3)&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-1.5" y="0.95" dx="0.8" dy="0.4" layer="1"/>
-<smd name="2" x="-1.5" y="0" dx="0.8" dy="0.4" layer="1"/>
-<smd name="3" x="-1.5" y="-0.95" dx="0.8" dy="0.4" layer="1"/>
-<smd name="4" x="1.5" y="-0.95" dx="0.8" dy="0.4" layer="1"/>
-<smd name="5" x="1.5" y="0" dx="0.8" dy="0.4" layer="1"/>
-<smd name="6" x="1.5" y="0.95" dx="0.8" dy="0.4" layer="1"/>
-<smd name="7" x="0" y="0" dx="2.5" dy="1.75" layer="1" rot="R90"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-2.125" y1="1.8" x2="2.125" y2="1.8" width="0.05" layer="51"/>
-<wire x1="2.125" y1="1.8" x2="2.125" y2="-1.8" width="0.05" layer="51"/>
-<wire x1="2.125" y1="-1.8" x2="-2.125" y2="-1.8" width="0.05" layer="51"/>
-<wire x1="-2.125" y1="-1.8" x2="-2.125" y2="1.8" width="0.05" layer="51"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1" layer="51"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1" layer="51"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1" layer="51"/>
-<wire x1="-1.5" y1="0.75" x2="-0.75" y2="1.5" width="0.1" layer="51"/>
-<circle x="-1.9" y="1.65" radius="0.125" width="0.25" layer="25"/>
-</package>
 <package name="SON65P200X200X80-7N">
 <description>&lt;b&gt;WDFN6 2x2, 0.65P*&lt;/b&gt;&lt;br&gt;
 </description>
@@ -1509,21 +1486,6 @@ Powered</text>
 <pin name="GND" x="-20.32" y="-2.54" length="middle"/>
 <pin name="OUT" x="17.78" y="-2.54" length="middle" rot="R180"/>
 <pin name="VDD" x="-20.32" y="5.08" length="middle"/>
-</symbol>
-<symbol name="LD39200PU33R">
-<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<text x="-12.7" y="10.922" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="OUT@1" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="SENSE@2" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="GND@3" x="-17.78" y="-5.08" length="middle"/>
-<pin name="GND@PAD" x="-17.78" y="-7.62" length="middle"/>
-<pin name="IN@6" x="-17.78" y="7.62" length="middle"/>
-<pin name="EN@5" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="PG@4" x="17.78" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 <symbol name="NCP187AMT330TAG">
 <wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -1711,38 +1673,6 @@ Source: &lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/DSC60xxB-Ul
 <attribute name="MANUFACTURER_PART_NUMBER" value="DSC6001JE2B-024.0000" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="579-6001JE2B024.0000" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Microchip-Technology/DSC6001JE2B-0240000?qs=xZ%2FP%252Ba9zWqbhSgsqNWWTew%3D%3D" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LD39200PU33R" prefix="IC">
-<description>&lt;b&gt;LDO Voltage Regulators 2 A high PSRR ultra low drop linear regulator with reverse current protection&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.st.com/resource/en/datasheet/ld39200.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LD39200PU33R" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SON95P300X300X100-7N">
-<connects>
-<connect gate="G$1" pin="EN@5" pad="5"/>
-<connect gate="G$1" pin="GND@3" pad="3"/>
-<connect gate="G$1" pin="GND@PAD" pad="7"/>
-<connect gate="G$1" pin="IN@6" pad="6"/>
-<connect gate="G$1" pin="OUT@1" pad="1"/>
-<connect gate="G$1" pin="PG@4" pad="4"/>
-<connect gate="G$1" pin="SENSE@2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="LD39200PU33R" constant="no"/>
-<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/ld39200pu33r/stmicroelectronics" constant="no"/>
-<attribute name="DESCRIPTION" value="LDO Voltage Regulators 2 A high PSRR ultra low drop linear regulator with reverse current protection" constant="no"/>
-<attribute name="HEIGHT" value="1mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="STMicroelectronics" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="LD39200PU33R" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="511-LD39200PU33R" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LD39200PU33R?qs=WHlX%252B%252B9%2FRwAl6%2FJDqRS1uw%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1957,6 +1887,31 @@ by exp-lbrs.ulp</description>
 <wire x1="-0.09" y1="-0.8" x2="-0.09" y2="0.8" width="0.2" layer="21"/>
 <wire x1="-1.075" y1="0.99" x2="-0.44" y2="0.99" width="0.2" layer="21"/>
 </package>
+<package name="NCP186AMX330TAG">
+<description>&lt;b&gt;XDFN8 1.6x1.2 0.4P CASE 711AS&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.6" y="-0.275" dx="0.35" dy="0.26" layer="1" rot="R90"/>
+<smd name="2" x="-0.2" y="-0.275" dx="0.35" dy="0.26" layer="1" rot="R90"/>
+<smd name="3" x="0.2" y="-0.275" dx="0.35" dy="0.26" layer="1" rot="R90"/>
+<smd name="4" x="0.6" y="-0.275" dx="0.35" dy="0.26" layer="1" rot="R90"/>
+<smd name="5" x="0.6" y="0.775" dx="0.35" dy="0.26" layer="1" rot="R90"/>
+<smd name="6" x="0.2" y="0.775" dx="0.35" dy="0.26" layer="1" rot="R90"/>
+<smd name="7" x="-0.2" y="0.775" dx="0.35" dy="0.26" layer="1" rot="R90"/>
+<smd name="8" x="-0.6" y="0.775" dx="0.35" dy="0.26" layer="1" rot="R90"/>
+<smd name="9" x="0" y="0.25" dx="1.44" dy="0.44" layer="1"/>
+<text x="-2.667" y="-3.76" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="2.59" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-0.8" y1="0.85" x2="0.8" y2="0.85" width="0.2" layer="51"/>
+<wire x1="0.8" y1="0.85" x2="0.8" y2="-0.35" width="0.2" layer="51"/>
+<wire x1="0.8" y1="-0.35" x2="-0.8" y2="-0.35" width="0.2" layer="51"/>
+<wire x1="-0.8" y1="-0.35" x2="-0.8" y2="0.85" width="0.2" layer="51"/>
+<wire x1="-1.8" y1="1.95" x2="1.8" y2="1.95" width="0.1" layer="51"/>
+<wire x1="1.8" y1="1.95" x2="1.8" y2="-1.85" width="0.1" layer="51"/>
+<wire x1="1.8" y1="-1.85" x2="-1.8" y2="-1.85" width="0.1" layer="51"/>
+<wire x1="-1.8" y1="-1.85" x2="-1.8" y2="1.95" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="-0.65" x2="-0.6" y2="-0.85" width="0.2" layer="21" curve="-180"/>
+<wire x1="-0.6" y1="-0.85" x2="-0.6" y2="-0.65" width="0.2" layer="21" curve="-180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="XE_PBI">
@@ -2071,6 +2026,23 @@ by exp-lbrs.ulp</description>
 <wire x1="5.08" y1="-7.62" x2="2.286" y2="-7.112" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="0" x2="-12.7" y2="0" width="0.2" layer="94"/>
 <text x="-7.62" y="-2.54" size="1.4224" layer="95">B</text>
+</symbol>
+<symbol name="NCP186BMX330TAG">
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="OUT@1" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="OUT@2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="N/C" x="-17.78" y="0" length="middle" direction="nc"/>
+<pin name="FB/ADJ@4" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND@5" x="-17.78" y="-5.08" length="middle"/>
+<pin name="EN@6" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="IN@7" x="-17.78" y="5.08" length="middle"/>
+<pin name="IN@8" x="-17.78" y="2.54" length="middle"/>
+<pin name="GND@EPAD" x="-17.78" y="-7.62" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2235,6 +2207,40 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/MMBT3904T.pdf
 <attribute name="MANUFACTURER_PART_NUMBER" value="MMBT3904T" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="512-MMBT3904T" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/MMBT3904T?qs=ZAjGDd5n2aEhPNEac8fMzw%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCP186BMX330TAG" prefix="IC">
+<description>&lt;b&gt;LDO Voltage Regulators FAST TRANSIENT RESPO&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.onsemi.com/pub/Collateral/NCP186-D.PDF"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="NCP186BMX330TAG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NCP186AMX330TAG">
+<connects>
+<connect gate="G$1" pin="EN@6" pad="6"/>
+<connect gate="G$1" pin="FB/ADJ@4" pad="4"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="GND@EPAD" pad="9"/>
+<connect gate="G$1" pin="IN@7" pad="7"/>
+<connect gate="G$1" pin="IN@8" pad="8"/>
+<connect gate="G$1" pin="N/C" pad="3"/>
+<connect gate="G$1" pin="OUT@1" pad="1"/>
+<connect gate="G$1" pin="OUT@2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="NCP186BMX330TAG" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/ncp186bmx330tag/on-semiconductor?region=nac" constant="no"/>
+<attribute name="DESCRIPTION" value="LDO Voltage Regulators FAST TRANSIENT RESPO" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="ON Semiconductor" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="NCP186BMX330TAG" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="863-NCP186BMX330TAG" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/onsemi/NCP186BMX330TAG?qs=tCMd4XlZ%2FiDuLBXmI4EY0w%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -13223,6 +13229,7 @@ DDEController.pdf</description>
 <schematic_group name="SPI_FLASH"/>
 <schematic_group name="CLOCK_IN"/>
 <schematic_group name="RESET_CONTROL"/>
+<schematic_group name="POWER_3V3"/>
 </groups>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
@@ -13239,23 +13246,10 @@ DDEController.pdf</description>
 </part>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="U$3" library="sjg-power" deviceset="+1.2V" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="10uF">
-<attribute name="USE" value="CL05A106MP5NUNC"/>
-</part>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="10uF">
-<attribute name="USE" value="CL05A106MP5NUNC"/>
-</part>
-<part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="Y1" library="x-pi" deviceset="DSC6001J" device="">
 <attribute name="USE" value="DSC6001JI1A-050.0000"/>
-</part>
-<part name="IC3" library="x-pi" deviceset="LD39200PU33R" device="">
-<attribute name="USE" value="LD39200PU33R"/>
 </part>
 <part name="IC2" library="x-pi" deviceset="NCP187AMT330TAG" device="" value="NCP187AMT120TAG">
 <attribute name="ARROW_PART_NUMBER" value="NCP187AMT120TAG"/>
@@ -13269,7 +13263,6 @@ DDEController.pdf</description>
 </part>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="V12" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="V33" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="P+3" library="sjg-supply1" deviceset="+5V" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="+3V20" library="sjg-supply1" deviceset="+3V3" device=""/>
@@ -13637,7 +13630,7 @@ DDEController.pdf</description>
 <part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="100K">
 <attribute name="USE" value="PFR03S-104-JNH"/>
 </part>
-<part name="IC12" library="host" deviceset="MMBT3904T" device="">
+<part name="IC12" library="host" deviceset="MMBT3904T" device="" value="MUN2211T3G">
 <attribute name="USE" value="MMBT3904T-7-F"/>
 </part>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
@@ -13681,14 +13674,35 @@ DDEController.pdf</description>
 <attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="SUPPLY33" library="supply2" deviceset="GND" device=""/>
+<part name="IC13" library="host" deviceset="NCP186BMX330TAG" device="">
+<attribute name="USE" value="NCP186BMX330TAG"/>
+</part>
+<part name="P+19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY35" library="supply2" deviceset="GND" device=""/>
+<part name="+3V35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="V3.3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="C55" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="1uF">
+<attribute name="USE" value="CM03X5R105M10AH"/>
+</part>
+<part name="C56" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="1uF">
+<attribute name="USE" value="CM03X5R105M10AH"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="12.7" y="243.84" size="1.778" layer="94">Checklist:
+<text x="7.62" y="228.6" size="1.778" layer="94">Checklist:
 
 [x]        All T8 checklist items
-[x]        Directionality of level xlators</text>
+[x]        Directionality of level xlators
+
+To Do:
+
+- Swap out the BJT NPN on CDONE with the design from x-pi
+- Find a replacement 3.3v regulator
+
+</text>
 <wire x1="316.865" y1="52.705" x2="347.345" y2="52.705" width="1.27" layer="94"/>
 <text x="349.885" y="59.817" size="1.778" layer="94">0.035mm</text>
 <text x="349.885" y="52.197" size="1.778" layer="94">0.035mm</text>
@@ -14160,8 +14174,8 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <description>Power</description>
 <plain>
 <text x="346.71" y="20.32" size="2.54" layer="94">Power</text>
-<text x="48.26" y="231.14" size="1.778" layer="97" grouprefs="POWER_3V1">Can put out 2A</text>
 <text x="302.26" y="218.44" size="1.778" layer="97" grouprefs="POWER_1V2">Can put out 1.2A</text>
+<text x="50.8" y="215.9" size="1.778" layer="97">Can put out 1A</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="2.54" y="0" smashed="yes">
@@ -14182,33 +14196,6 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 </instance>
 <instance part="U$3" gate="G$1" x="350.52" y="231.14" smashed="yes" grouprefs="POWER_1V2">
 <attribute name="VALUE" x="355.6" y="232.41" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="P+2" gate="1" x="20.32" y="228.6" smashed="yes" grouprefs="POWER_3V1">
-<attribute name="VALUE" x="17.78" y="223.52" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="C2" gate="G$1" x="20.32" y="208.28" smashed="yes" grouprefs="POWER_3V1">
-<attribute name="NAME" x="21.844" y="208.661" size="1.778" layer="95"/>
-<attribute name="VALUE" x="21.844" y="203.581" size="1.778" layer="96"/>
-<attribute name="USE" x="20.32" y="208.28" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C3" gate="G$1" x="88.9" y="205.74" smashed="yes" grouprefs="POWER_3V1">
-<attribute name="NAME" x="90.424" y="206.121" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.424" y="201.041" size="1.778" layer="96"/>
-<attribute name="USE" x="88.9" y="205.74" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="SUPPLY4" gate="GND" x="20.32" y="187.96" smashed="yes" grouprefs="POWER_3V1">
-<attribute name="VALUE" x="18.415" y="184.785" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY5" gate="GND" x="88.9" y="187.96" smashed="yes" grouprefs="POWER_3V1">
-<attribute name="VALUE" x="86.995" y="184.785" size="1.778" layer="96"/>
-</instance>
-<instance part="+3V1" gate="G$1" x="88.9" y="233.68" smashed="yes" grouprefs="POWER_3V1">
-<attribute name="VALUE" x="91.44" y="236.22" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="IC3" gate="G$1" x="55.88" y="208.28" smashed="yes">
-<attribute name="NAME" x="43.18" y="219.202" size="1.778" layer="95"/>
-<attribute name="VALUE" x="43.18" y="195.58" size="1.778" layer="96"/>
-<attribute name="USE" x="55.88" y="208.28" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IC2" gate="G$1" x="322.58" y="200.66" smashed="yes" grouprefs="POWER_1V2">
 <attribute name="NAME" x="312.42" y="211.328" size="1.778" layer="95"/>
@@ -14232,10 +14219,6 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <attribute name="NAME" x="346.71" y="219.075" size="1.778" layer="95"/>
 <attribute name="VALUE" x="346.71" y="208.28" size="1.778" layer="96"/>
 </instance>
-<instance part="V33" gate="G$1" x="91.44" y="220.98" smashed="yes">
-<attribute name="NAME" x="85.09" y="226.695" size="1.778" layer="95"/>
-<attribute name="VALUE" x="85.09" y="215.9" size="1.778" layer="96"/>
-</instance>
 <instance part="+3V10" gate="G$1" x="162.56" y="220.98" smashed="yes" grouprefs="CLOCK_IN">
 <attribute name="VALUE" x="165.1" y="223.52" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -14247,24 +14230,24 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <attribute name="VALUE" x="172.72" y="200.66" size="1.778" layer="96"/>
 <attribute name="USE" x="187.96" y="208.28" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="FLASH" gate="G$1" x="48.26" y="129.54" smashed="yes" grouprefs="SPI_FLASH">
-<attribute name="NAME" x="43.18" y="137.16" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="38.1" y="119.38" size="1.27" layer="96"/>
-<attribute name="USE" x="48.26" y="129.54" size="1.778" layer="96" display="off"/>
+<instance part="FLASH" gate="G$1" x="289.56" y="132.08" smashed="yes" grouprefs="SPI_FLASH">
+<attribute name="NAME" x="284.48" y="139.7" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="279.4" y="121.92" size="1.27" layer="96"/>
+<attribute name="USE" x="289.56" y="132.08" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="+3V23" gate="G$1" x="71.12" y="144.78" smashed="yes" grouprefs="SPI_FLASH">
-<attribute name="VALUE" x="73.66" y="147.32" size="1.778" layer="96" rot="R180"/>
+<instance part="+3V23" gate="G$1" x="312.42" y="147.32" smashed="yes" grouprefs="SPI_FLASH">
+<attribute name="VALUE" x="314.96" y="149.86" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY19" gate="GND" x="25.4" y="116.84" smashed="yes" grouprefs="SPI_FLASH">
-<attribute name="VALUE" x="23.495" y="113.665" size="1.778" layer="96"/>
+<instance part="SUPPLY19" gate="GND" x="266.7" y="119.38" smashed="yes" grouprefs="SPI_FLASH">
+<attribute name="VALUE" x="264.795" y="116.205" size="1.778" layer="96"/>
 </instance>
-<instance part="C51" gate="G$1" x="88.9" y="132.08" smashed="yes" grouprefs="SPI_FLASH">
-<attribute name="NAME" x="90.424" y="132.461" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.424" y="127.381" size="1.778" layer="96"/>
-<attribute name="USE" x="88.9" y="132.08" size="1.27" layer="96" display="off"/>
+<instance part="C51" gate="G$1" x="330.2" y="134.62" smashed="yes" grouprefs="SPI_FLASH">
+<attribute name="NAME" x="331.724" y="135.001" size="1.778" layer="95"/>
+<attribute name="VALUE" x="331.724" y="129.921" size="1.778" layer="96"/>
+<attribute name="USE" x="330.2" y="134.62" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="SUPPLY20" gate="GND" x="88.9" y="114.3" smashed="yes" grouprefs="SPI_FLASH">
-<attribute name="VALUE" x="86.995" y="111.125" size="1.778" layer="96"/>
+<instance part="SUPPLY20" gate="GND" x="330.2" y="116.84" smashed="yes" grouprefs="SPI_FLASH">
+<attribute name="VALUE" x="328.295" y="113.665" size="1.778" layer="96"/>
 </instance>
 <instance part="RESET" gate="S" x="182.88" y="129.54" smashed="yes" grouprefs="RESET_CONTROL">
 <attribute name="NAME" x="180.34" y="123.19" size="1.778" layer="95"/>
@@ -14295,30 +14278,42 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <attribute name="VALUE" x="151.384" y="206.121" size="1.778" layer="96"/>
 <attribute name="USE" x="149.86" y="210.82" size="1.27" layer="96" display="off"/>
 </instance>
+<instance part="IC13" gate="G$1" x="60.96" y="195.58" smashed="yes" grouprefs="POWER_3V3">
+<attribute name="NAME" x="48.26" y="203.708" size="1.778" layer="95"/>
+<attribute name="VALUE" x="48.26" y="182.88" size="1.778" layer="96"/>
+<attribute name="USE" x="60.96" y="195.58" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="P+19" gate="1" x="27.94" y="220.98" smashed="yes" grouprefs="POWER_3V3">
+<attribute name="VALUE" x="25.4" y="215.9" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY34" gate="GND" x="27.94" y="175.26" smashed="yes" grouprefs="POWER_3V3">
+<attribute name="VALUE" x="26.035" y="172.085" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY35" gate="GND" x="104.14" y="175.26" smashed="yes" grouprefs="POWER_3V3">
+<attribute name="VALUE" x="102.235" y="172.085" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V35" gate="G$1" x="104.14" y="220.98" smashed="yes" grouprefs="POWER_3V3">
+<attribute name="VALUE" x="106.68" y="223.52" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="V3.3" gate="G$1" x="106.68" y="208.28" smashed="yes" grouprefs="POWER_3V3">
+<attribute name="NAME" x="100.33" y="213.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.33" y="203.2" size="1.778" layer="96"/>
+</instance>
+<instance part="C55" gate="G$1" x="27.94" y="195.58" smashed="yes" grouprefs="POWER_3V3">
+<attribute name="NAME" x="29.464" y="195.961" size="1.778" layer="95"/>
+<attribute name="VALUE" x="29.464" y="190.881" size="1.778" layer="96"/>
+<attribute name="USE" x="27.94" y="195.58" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="C56" gate="G$1" x="104.14" y="190.5" smashed="yes" grouprefs="POWER_3V3">
+<attribute name="NAME" x="105.664" y="190.881" size="1.778" layer="95"/>
+<attribute name="VALUE" x="105.664" y="185.801" size="1.778" layer="96"/>
+<attribute name="USE" x="104.14" y="190.5" size="1.27" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="203.2" x2="20.32" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<wire x1="20.32" y1="200.66" x2="30.48" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<wire x1="30.48" y1="200.66" x2="38.1" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<wire x1="38.1" y1="203.2" x2="30.48" y2="203.2" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<wire x1="30.48" y1="203.2" x2="30.48" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<junction x="30.48" y="200.66" grouprefs="POWER_3V1"/>
-<pinref part="SUPPLY4" gate="GND" pin="GND"/>
-<wire x1="20.32" y1="200.66" x2="20.32" y2="190.5" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<junction x="20.32" y="200.66" grouprefs="POWER_3V1"/>
-<pinref part="IC3" gate="G$1" pin="GND@3"/>
-<pinref part="IC3" gate="G$1" pin="GND@PAD"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="88.9" y1="200.66" x2="88.9" y2="190.5" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-</segment>
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="GND@PAD"/>
@@ -14351,14 +14346,14 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 </segment>
 <segment>
 <pinref part="FLASH" gate="G$1" pin="GND"/>
-<wire x1="33.02" y1="124.46" x2="25.4" y2="124.46" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<wire x1="274.32" y1="127" x2="266.7" y2="127" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
 <pinref part="SUPPLY19" gate="GND" pin="GND"/>
-<wire x1="25.4" y1="119.38" x2="25.4" y2="124.46" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<wire x1="266.7" y1="121.92" x2="266.7" y2="127" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
 </segment>
 <segment>
 <pinref part="C51" gate="G$1" pin="2"/>
 <pinref part="SUPPLY20" gate="GND" pin="GND"/>
-<wire x1="88.9" y1="127" x2="88.9" y2="116.84" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<wire x1="330.2" y1="129.54" x2="330.2" y2="119.38" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
 </segment>
 <segment>
 <pinref part="RESET" gate="S" pin="2"/>
@@ -14384,6 +14379,24 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <wire x1="172.72" y1="142.24" x2="172.72" y2="129.54" width="0.1524" layer="91" grouprefs="RESET_CONTROL"/>
 <junction x="172.72" y="129.54" grouprefs="RESET_CONTROL"/>
 </segment>
+<segment>
+<pinref part="SUPPLY34" gate="GND" pin="GND"/>
+<pinref part="C55" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="177.8" x2="27.94" y2="187.96" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<pinref part="IC13" gate="G$1" pin="GND@EPAD"/>
+<wire x1="27.94" y1="187.96" x2="27.94" y2="190.5" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<wire x1="43.18" y1="187.96" x2="38.1" y2="187.96" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<junction x="27.94" y="187.96" grouprefs="POWER_3V3"/>
+<wire x1="38.1" y1="187.96" x2="27.94" y2="187.96" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<wire x1="40.64" y1="190.5" x2="38.1" y2="190.5" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<wire x1="38.1" y1="190.5" x2="38.1" y2="187.96" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<junction x="38.1" y="187.96" grouprefs="POWER_3V3"/>
+</segment>
+<segment>
+<pinref part="C56" gate="G$1" pin="2"/>
+<pinref part="SUPPLY35" gate="GND" pin="GND"/>
+<wire x1="104.14" y1="185.42" x2="104.14" y2="177.8" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -14406,13 +14419,18 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <junction x="294.64" y="208.28" grouprefs="POWER_1V2"/>
 </segment>
 <segment>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="38.1" y1="215.9" x2="20.32" y2="215.9" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<wire x1="20.32" y1="215.9" x2="20.32" y2="226.06" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<junction x="20.32" y="215.9" grouprefs="POWER_3V1"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="215.9" x2="20.32" y2="210.82" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<pinref part="IC3" gate="G$1" pin="IN@6"/>
+<pinref part="C55" gate="G$1" pin="1"/>
+<pinref part="P+19" gate="1" pin="+5V"/>
+<wire x1="27.94" y1="198.12" x2="27.94" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<pinref part="IC13" gate="G$1" pin="IN@7"/>
+<wire x1="27.94" y1="200.66" x2="27.94" y2="218.44" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<wire x1="43.18" y1="200.66" x2="38.1" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<junction x="27.94" y="200.66" grouprefs="POWER_3V3"/>
+<pinref part="IC13" gate="G$1" pin="IN@8"/>
+<wire x1="38.1" y1="200.66" x2="27.94" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<wire x1="43.18" y1="198.12" x2="38.1" y2="198.12" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<wire x1="38.1" y1="198.12" x2="38.1" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<junction x="38.1" y="200.66" grouprefs="POWER_3V3"/>
 </segment>
 </net>
 <net name="+1.2V" class="0">
@@ -14435,19 +14453,12 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <wire x1="342.9" y1="182.88" x2="274.32" y2="182.88" width="0.1524" layer="91" grouprefs="POWER_1V2"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="200.66" x2="73.66" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<label x="75.692" y="193.548" size="1.778" layer="95" rot="R180" grouprefs="POWER_3V1"/>
-<wire x1="78.74" y1="200.66" x2="78.74" y2="193.04" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<wire x1="78.74" y1="193.04" x2="76.2" y2="193.04" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<pinref part="IC3" gate="G$1" pin="EN@5"/>
+<pinref part="IC13" gate="G$1" pin="EN@6"/>
+<wire x1="78.74" y1="187.96" x2="83.82" y2="187.96" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<label x="84.328" y="187.452" size="1.778" layer="95" grouprefs="POWER_3V3"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
-<segment>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<pinref part="V33" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="223.52" x2="88.9" y2="231.14" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-</segment>
 <segment>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="167.64" y1="213.36" x2="162.56" y2="213.36" width="0.1524" layer="91" grouprefs="CLOCK_IN"/>
@@ -14465,14 +14476,14 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 </segment>
 <segment>
 <pinref part="FLASH" gate="G$1" pin="VCC"/>
-<wire x1="63.5" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<wire x1="304.8" y1="134.62" x2="312.42" y2="134.62" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
-<wire x1="71.12" y1="142.24" x2="71.12" y2="137.16" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<wire x1="312.42" y1="144.78" x2="312.42" y2="139.7" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
 <pinref part="C51" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="137.16" x2="71.12" y2="132.08" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
-<wire x1="71.12" y1="137.16" x2="88.9" y2="137.16" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
-<wire x1="88.9" y1="137.16" x2="88.9" y2="134.62" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
-<junction x="71.12" y="137.16" grouprefs="SPI_FLASH"/>
+<wire x1="312.42" y1="139.7" x2="312.42" y2="134.62" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<wire x1="312.42" y1="139.7" x2="330.2" y2="139.7" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<wire x1="330.2" y1="139.7" x2="330.2" y2="137.16" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<junction x="312.42" y="139.7" grouprefs="SPI_FLASH"/>
 </segment>
 <segment>
 <pinref part="+3V28" gate="G$1" pin="+3V3"/>
@@ -14483,6 +14494,11 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <wire x1="165.1" y1="147.32" x2="160.02" y2="147.32" width="0.1524" layer="91" grouprefs="RESET_CONTROL"/>
 <wire x1="160.02" y1="147.32" x2="160.02" y2="139.7" width="0.1524" layer="91" grouprefs="RESET_CONTROL"/>
 <junction x="165.1" y="147.32" grouprefs="RESET_CONTROL"/>
+</segment>
+<segment>
+<pinref part="+3V35" gate="G$1" pin="+3V3"/>
+<pinref part="V3.3" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="210.82" x2="104.14" y2="218.44" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -14501,22 +14517,6 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <junction x="350.52" y="208.28" grouprefs="POWER_1V2"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="73.66" y1="215.9" x2="78.74" y2="215.9" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<wire x1="78.74" y1="215.9" x2="88.9" y2="215.9" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="208.28" x2="88.9" y2="215.9" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<wire x1="73.66" y1="210.82" x2="78.74" y2="210.82" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<wire x1="78.74" y1="210.82" x2="78.74" y2="215.9" width="0.1524" layer="91" grouprefs="POWER_3V1"/>
-<junction x="78.74" y="215.9" grouprefs="POWER_3V1"/>
-<pinref part="IC3" gate="G$1" pin="OUT@1"/>
-<pinref part="IC3" gate="G$1" pin="SENSE@2"/>
-<pinref part="V33" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="220.98" x2="88.9" y2="215.9" width="0.1524" layer="91"/>
-<junction x="88.9" y="215.9"/>
-</segment>
-</net>
 <net name="CLK25" class="0">
 <segment>
 <label x="211.328" y="205.232" size="1.778" layer="95" grouprefs="CLOCK_IN"/>
@@ -14527,43 +14527,43 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <net name="SPI_D3" class="0">
 <segment>
 <pinref part="FLASH" gate="G$1" pin="HOLD"/>
-<wire x1="63.5" y1="129.54" x2="68.58" y2="129.54" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
-<label x="69.088" y="129.032" size="1.778" layer="95" grouprefs="SPI_FLASH"/>
+<wire x1="304.8" y1="132.08" x2="309.88" y2="132.08" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<label x="310.388" y="131.572" size="1.778" layer="95" grouprefs="SPI_FLASH"/>
 </segment>
 </net>
 <net name="SPI_SS" class="0">
 <segment>
 <pinref part="FLASH" gate="G$1" pin="CS"/>
-<wire x1="33.02" y1="132.08" x2="27.94" y2="132.08" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
-<label x="27.432" y="132.588" size="1.778" layer="95" rot="R180" grouprefs="SPI_FLASH"/>
+<wire x1="274.32" y1="134.62" x2="269.24" y2="134.62" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<label x="268.732" y="135.128" size="1.778" layer="95" rot="R180" grouprefs="SPI_FLASH"/>
 </segment>
 </net>
 <net name="SPI_D2" class="0">
 <segment>
 <pinref part="FLASH" gate="G$1" pin="WP"/>
-<wire x1="33.02" y1="127" x2="27.94" y2="127" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
-<label x="27.432" y="127.508" size="1.778" layer="95" rot="R180" grouprefs="SPI_FLASH"/>
+<wire x1="274.32" y1="129.54" x2="269.24" y2="129.54" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<label x="268.732" y="130.048" size="1.778" layer="95" rot="R180" grouprefs="SPI_FLASH"/>
 </segment>
 </net>
 <net name="SPI_D1" class="0">
 <segment>
 <pinref part="FLASH" gate="G$1" pin="MISO"/>
-<wire x1="33.02" y1="129.54" x2="27.94" y2="129.54" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
-<label x="27.432" y="130.048" size="1.778" layer="95" rot="R180" grouprefs="SPI_FLASH"/>
+<wire x1="274.32" y1="132.08" x2="269.24" y2="132.08" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<label x="268.732" y="132.588" size="1.778" layer="95" rot="R180" grouprefs="SPI_FLASH"/>
 </segment>
 </net>
 <net name="SPI_CLK" class="0">
 <segment>
 <pinref part="FLASH" gate="G$1" pin="SCK"/>
-<wire x1="63.5" y1="127" x2="68.58" y2="127" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
-<label x="69.088" y="126.492" size="1.778" layer="95" grouprefs="SPI_FLASH"/>
+<wire x1="304.8" y1="129.54" x2="309.88" y2="129.54" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<label x="310.388" y="129.032" size="1.778" layer="95" grouprefs="SPI_FLASH"/>
 </segment>
 </net>
 <net name="SPI_D0" class="0">
 <segment>
 <pinref part="FLASH" gate="G$1" pin="MOSI"/>
-<wire x1="63.5" y1="124.46" x2="68.58" y2="124.46" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
-<label x="69.088" y="123.952" size="1.778" layer="95" grouprefs="SPI_FLASH"/>
+<wire x1="304.8" y1="127" x2="309.88" y2="127" width="0.1524" layer="91" grouprefs="SPI_FLASH"/>
+<label x="310.388" y="126.492" size="1.778" layer="95" grouprefs="SPI_FLASH"/>
 </segment>
 </net>
 <net name="!CRESET!" class="0">
@@ -14585,6 +14585,26 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <junction x="195.58" y="127" grouprefs="RESET_CONTROL"/>
 <junction x="208.28" y="127" grouprefs="RESET_CONTROL"/>
 <label x="215.9" y="124.46" size="1.778" layer="95" grouprefs="RESET_CONTROL"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="IC13" gate="G$1" pin="OUT@1"/>
+<wire x1="78.74" y1="200.66" x2="83.82" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<pinref part="V3.3" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="200.66" x2="104.14" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<wire x1="104.14" y1="200.66" x2="104.14" y2="208.28" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<pinref part="IC13" gate="G$1" pin="OUT@2"/>
+<wire x1="78.74" y1="198.12" x2="83.82" y2="198.12" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<wire x1="83.82" y1="198.12" x2="83.82" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<junction x="83.82" y="200.66" grouprefs="POWER_3V3"/>
+<pinref part="IC13" gate="G$1" pin="FB/ADJ@4"/>
+<wire x1="78.74" y1="193.04" x2="83.82" y2="193.04" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<wire x1="83.82" y1="193.04" x2="83.82" y2="198.12" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<junction x="83.82" y="198.12" grouprefs="POWER_3V3"/>
+<pinref part="C56" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="193.04" x2="104.14" y2="200.66" width="0.1524" layer="91" grouprefs="POWER_3V3"/>
+<junction x="104.14" y="200.66" grouprefs="POWER_3V3"/>
 </segment>
 </net>
 </nets>
