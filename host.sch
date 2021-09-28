@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13222,6 +13222,8 @@ DDEController.pdf</description>
 </class>
 <class number="1" name="+5v" width="0.3048" drill="0">
 </class>
+<class number="2" name="+1.2v" width="0.3048" drill="0">
+</class>
 </classes>
 <groups>
 <schematic_group name="POWER_1V2"/>
@@ -14433,7 +14435,7 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <junction x="38.1" y="200.66" grouprefs="POWER_3V3"/>
 </segment>
 </net>
-<net name="+1.2V" class="0">
+<net name="+1.2V" class="2">
 <segment>
 <pinref part="V12" gate="G$1" pin="1"/>
 <pinref part="U$3" gate="G$1" pin="+1.2V"/>
@@ -14869,7 +14871,7 @@ See https://www.pcbway.com/multi-layer-laminated-structure.html</text>
 <busses>
 </busses>
 <nets>
-<net name="+1.2V" class="0">
+<net name="+1.2V" class="2">
 <segment>
 <pinref part="U$1" gate="-CFG" pin="VCC@13"/>
 <wire x1="170.18" y1="228.6" x2="170.18" y2="226.06" width="0.1524" layer="91"/>
@@ -17716,7 +17718,7 @@ Use the Efinix transistor on CDONE</text>
 <label x="493.268" y="146.812" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+1.2V" class="0">
+<net name="+1.2V" class="2">
 <segment>
 <pinref part="U$1" gate="-LEFT" pin="VCCA_TL@2"/>
 <pinref part="U$6" gate="G$1" pin="+1.2V"/>
