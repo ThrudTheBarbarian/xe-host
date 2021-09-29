@@ -1,0 +1,36 @@
+@5
+	PCB		159.75
+	SMT		125.90
+	Parts	132.90
+	
+	Total	$418.55	or $83.71 ea
+
+
+@50
+	PCB		105.00	(4 layer)
+	SMT		230.00
+	Parts  1070.00
+	Ship	 48.00
+	
+	Total	$1453.00	or $29.06 ea
+
+
+@100
+	PCB		165.00	(4 layer)
+	SMT		338.00
+	Parts  2100.00
+	Ship     79.00
+	
+	Total	$2682.00	or $26.82 ea
+
+
+
+Host board		: $30.00
+Cable			: $ 8.00
+Motherboard		: $23.00
+Zynq			: $49.00
+Subtotal		: $110.00
+
+Boxes			: $ 20.00
+
+Total			: $130.00
